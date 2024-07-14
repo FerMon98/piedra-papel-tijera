@@ -49,3 +49,17 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 885px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    main {
+        font-size: 1rem;
+    }
+
+    .firstGame ul li ul {
+        flex-wrap: wrap;
+    }
+}
