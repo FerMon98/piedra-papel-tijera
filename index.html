@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/style.css">
+    <link rel="shortcut icon" href="Resources/favicon/favicon.ico" type="image/x-icon">
+    <title>Piedra Papel y Tijera</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra, papel, tijera</h1>
+        <p class="firstGame">Bienvenido a un juego de piedra, papel, tijera! Seleccione una opción para jugar.</p>
+        <p class="repeat">Bienvenido otra vez! Seleccione una opción para jugar.</p>
+    </header>
+
+    <main>
+        <hr> <br>
+        <section class="firstGame">
+            <h2>Reglas del juego:</h2>
+            <ul>
+                <li>Elige una opción: 🗻 📰 ✂️</li>
+                <li>¡Esta vez jugaremos contra la computadora!</li>
+                <li>Te presentamos las combinaciones ganadoras: 
+                    <ul>
+                        <li>Piedra 🗻 gana a tijera ✂️</li>
+                        <li>Papel 📰 gana a piedra 🗻</li>
+                        <li>Tijera ✂️ gana a papel 📰</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <br><hr><br>
+
+        <section class="juego">
+            <h3>¡Vamos a empezar!</h3>
+            <h4>Dime tu nombre:</h4>
+            <input type="text" id="playerName" name="playerName" title="nombre" required>
+            <button type="button" id="startGame">Enviar</button>
+
+            <form>
+                <label for="playerChoice">Elige tu opción:</label>
+                <select id="playerChoice" name="playerChoice">
+                    <option value="">Opción</option>
+                    <option value="rock">Piedra</option>
+                    <option value="paper">Papel</option>
+                    <option value="scissors">Tijera</option>
+                </select>
+                <button type="submit">Jugar</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+<script src="piedra-papel-tijera.js"></script>
+</html>
