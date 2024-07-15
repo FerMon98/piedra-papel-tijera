@@ -45,6 +45,17 @@ function checkWinner(playerChoice) {
         alert("Vuelve a intentarlo 😢");
     }
 }
+
+/* Showing images based on result */
+
+function showImg() {
+
+    if (checkWinner(playerChoice).alert() === "Empate") {
+        document.getElementById("id").src = "resources/images/empate.png";
+    }
+}
+
+
     
 /* Showing choices and the winner */
 
@@ -53,5 +64,4 @@ startGame.addEventListener("click", function () {
     displayName(playerName.value, playerSelectedChoice);
     checkWinner(playerSelectedChoice);
 });
-
 
